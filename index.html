@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سالن بیلیارد استار | بهترین سالن بیلیارد شهر</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Noto Naskh Arabic', serif;
+        }
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- هدر -->
+    <header class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <i class="fas fa-8-ball text-2xl text-green-500"></i>
+                <h1 class="text-xl md:text-2xl font-bold">سالن بیلیارد استار</h1>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8 space-x-reverse">
+                    <li><a href="#home" class="hover:text-green-400 transition">خانه</a></li>
+                    <li><a href="#about" class="hover:text-green-400 transition">درباره ما</a></li>
+                    <li><a href="#gallery" class="hover:text-green-400 transition">گالری</a></li>
+                    <li><a href="#contact" class="hover:text-green-400 transition">تماس</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-2xl" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- منوی موبایل -->
+        <div class="md:hidden hidden bg-gray-800" id="mobile-menu">
+            <ul class="px-4 py-2 space-y-3">
+                <li><a href="#home" class="block py-2 hover:text-green-400 transition">خانه</a></li>
+                <li><a href="#about" class="block py-2 hover:text-green-400 transition">درباره ما</a></li>
+                <li><a href="#services" class="block py-2 hover:text-green-400 transition"></a></li>
+                <li><a href="#gallery" class="block py-2 hover:text-green-400 transition">گالری</a></li>
+                <li><a href="#contact" class="block py-2 hover:text-green-400 transition">تماس</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- بخش اصلی -->
+    <main>
+        <!-- بخش معرفی -->
+        <section id="home" class="hero-image text-white py-32">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">بهترین سالن بیلیارد شهر</h2>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
+                    محیطی حرفه‌ای و دوستانه برای علاقه‌مندان به بیلیارد با میزهای استاندارد و تجهیزات باکیفیت
+                </p>
+                <a href="#contact" class="inline-block bg-green-600 hover:bg-green-700 px-8 py-3 rounded-lg font-medium transition">اطلاعات تماس</a>
+            </div>
+        </section>
+
+        <!-- درباره ما -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-16 text-gray-800">درباره سالن استار</h2>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                        <img src="img/bil.jpg" 
+                             alt="درباره سالن بیلیارد" 
+                             class="rounded-lg shadow-lg w-full h-auto">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">تجربه‌ای منحصر به فرد در بیلیارد</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            سالن بیلیارد استار با بیش از ۱۰ سال سابقه، محیطی ایده‌آل برای دوستداران این ورزش مهیج فراهم کرده است. ما با ارائه میزهای استاندارد و تجهیزات باکیفیت، لحظات خوشی را برای شما رقم می‌زنیم.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 ml-2"></i>
+                                <span class="text-gray-700">۸ میز بیلیارد استاندارد</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 ml-2"></i>
+                                <span class="text-gray-700">کافه و سرویس نوشیدنی</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 ml-2"></i>
+                                <span class="text-gray-700">فضایی دنج و دوستانه</span>
+                            </li>
+                        </ul>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-2">ساعات کاری:</h4>
+                            <p class="text-gray-600">همه روزه از ساعت ۱۲ ظهر تا ۱۲ شب</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- خدمات -->
+        <section id="services" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-16 text-gray-800">خدمات ما</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- سرویس 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-green-500 text-4xl mb-4">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">اجاره میز بیلیارد</h3>
+                        <p class="text-gray-600 mb-4">
+                            میزهای استاندارد با بهترین کیفیت چوب و پارچه. قیمت‌های مناسب به صورت ساعتی.
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded">
+                            <p class="text-green-600 font-medium">قیمت: ساعتی ۶۵,۰۰۰ تومان</p>
+                        </div>
+                    </div>
+                    
+                    <!-- سرویس 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-green-500 text-4xl mb-4">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">مسابقات هفتگی</h3>
+                        <p class="text-gray-600 mb-4">
+                            هر هفته مسابقات دوستانه با جوایز نقدی و تخفیف‌های ویژه برای برندگان.
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded">
+                            <p class="text-green-600 font-medium">ثبت نام در محل سالن</p>
+                        </div>
+                    </div>
+                    
+                    <!-- سرویس 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-green-500 text-4xl mb-4">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">کافه و پذیرایی</h3>
+                        <p class="text-gray-600 mb-4">
+                            منوی متنوع از نوشیدنی‌های گرم و سرد، ساندویچ و اسنک‌های خوشمزه.
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded">
+                            <p class="text-green-600 font-medium">تخفیف ۱۵% برای بازیکنان</p>
+                        </div>
+                    </div>
+
+                    <!-- سرویس 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-green-500 text-4xl mb-4">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">آموزش بیلیارد</h3>
+                        <p class="text-gray-600 mb-4">
+                            آموزش توسط مربیان مجرب برای تمام سطوح از مبتدی تا پیشرفته.
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded">
+                            <p class="text-green-600 font-medium">جلسه‌ای ۱۰۰,۰۰۰ تومان</p>
+                        </div>
+                    </div>
+
+                    <!-- سرویس 5 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-green-500 text-4xl mb-4">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">مراسم خصوصی</h3>
+                        <p class="text-gray-600 mb-4">
+                            امکان برگزاری جشن‌های تولد و دورهمی‌های دوستانه در محیطی اختصاصی.
+                        </p>
+                        <div class="bg-gray-50 p-3 rounded">
+                            <p class="text-green-600 font-medium">قیمت: توافقی</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- گالری -->
+        <section id="gallery" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-16 text-gray-800">گالری تصاویر</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+                        <img src="https://images.unsplash.com/photo-1600861195091-690c92f1d2cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="سالن بیلیارد" 
+                             class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+                        <img src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="میز بیلیارد" 
+                             class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+                        <img src="https://images.unsplash.com/photo-1603383928972-0b3e8a7bdf02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="تجهیزات بیلیارد" 
+                             class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+                        <img src="https://images.unsplash.com/photo-1603384100552-9757214c140f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="مسابقات بیلیارد" 
+                             class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+                        <img src="https://images.unsplash.com/photo-1603383929155-9a352a5c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="کافه سالن" 
+                             class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
+                        <img src="https://images.unsplash.com/photo-1603383928972-0b3e8a7bdf02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="مربی در حال آموزش" 
+                             class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قیمت‌ها -->
+        <section class="py-20 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-16 text-gray-800">تعرفه خدمات</h2>
+                <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                    <table class="w-full">
+                        <thead class="bg-gray-800 text-white">
+                            <tr>
+                                <th class="py-4 px-6 text-right">خدمات</th>
+                                <th class="py-4 px-6">قیمت</th>
+                                <th class="py-4 px-6">توضیحات</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="py-4 px-6 font-medium">اجاره میز (اِیت)</td>
+                                <td class="py-4 px-6">۶۵,۰۰۰ تومان</td>
+                                <td class="py-4 px-6 text-gray-600">حداقل سه ساعت</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="py-4 px-6 font-medium">اجاره میز (اسنوکر)</td>
+                                <td class="py-4 px-6">۷۵,۰۰۰ تومان</td>
+                                <td class="py-4 px-6 text-gray-600">حداقل سه ساعت</td>
+<tr class="bg-gray-50">
+                            <td class="py-4 px-6 font-medium">اجاره میز (اسنوکر حرفه ای)</td>
+                            <td class="py-4 px-6">۹۵,۰۰۰ تومان</td>
+                            <td class="py-4 px-6 text-gray-600">حداقل سه ساعت</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-6 font-medium">آموزش خصوصی</td>
+                                <td class="py-4 px-6">۱۰۰,۰۰۰ تومان</td>
+                                <td class="py-4 px-6 text-gray-600">به ازای هر جلسه یک ساعته</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="py-4 px-6 font-medium">بسته ۵ جلسه‌ای آموزش</td>
+                                <td class="py-4 px-6">۴۰۰,۰۰۰ تومان</td>
+                                <td class="py-4 px-6 text-gray-600">صرفه‌جویی ۱۰۰,۰۰۰ تومانی</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-6 font-medium">اجاره سالن برای مراسم</td>
+                                <td class="py-4 px-6">توافقی</td>
+                                <td class="py-4 px-6 text-gray-600">تماس بگیرید</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-8 text-center text-gray-600">
+                    <p>تمامی قیمت‌ها به تومان می‌باشد و ممکن است تغییر کنند.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- تماس با ما -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-16 text-gray-800">تماس با ما</h2>
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">اطلاعات تماس</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-green-500 mt-1 ml-3 text-xl"></i>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">آدرس</h4>
+                                    <p class="text-gray-600">شهرضا، خیابان شهید بهشتی روبروی بیت العباس</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt text-green-500 mt-1 ml-3 text-xl"></i>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">تلفن</h4>
+                                    <p class="text-gray-600">۰۹۰۱۰۰۰۰۱۴۱</p>
+                                    <p class="text-gray-600">۰۹۱۳۹۲۰۷۳۹۷</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-green-500 mt-1 ml-3 text-xl"></i>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">ایمیل</h4>
+                                    <p class="text-gray-600">info@ojbilliard.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-green-500 mt-1 ml-3 text-xl"></i>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">ساعات کاری</h4>
+                                    <p class="text-gray-600">همه روزه از ساعت ۹ صبح تا ۱۲ شب</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-medium text-gray-800 mb-4">ما را در شبکه‌های اجتماعی دنبال کنید</h4>
+                            <div class="flex space-x-4 space-x-reverse">
+                                <a href="#" class="bg-gray-200 hover:bg-green-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-instagram text-xl"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 hover:bg-blue-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-telegram text-xl"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 hover:bg-blue-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-facebook-f text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+    <h3 class="text-2xl font-semibold mb-6 text-gray-800">نقشه محل سالن</h3>
+    <div class="bg-gray-200 h-64 md:h-full rounded-lg overflow-hidden">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.847069467661!2d51.8673702!3d32.0084681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fbb9aba179bad83%3A0xa4474880ab087bec!2z2KfZhNi52LHYqNmK2Kkg2KfZhNix2YLZhtmK2Kkg2KfZhNiu2YbYr9mF2KfYqiDYp9mE2YXYudmH2K8gMlY1OCtDWJLigKwsINin2YTYudix2KjZitip!5e0!3m2!1sen!2s!4v1712673153203!5m2!1sen!2s" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- فوتر -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-6">سالن بیلیارد استار</h3>
+                    <p class="text-gray-400">
+                        بهترین سالن بیلیارد با محیطی مدرن و مجهز برای علاقه‌مندان به این ورزش جذاب و سرگرم‌کننده.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-6">لینک‌های سریع</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-green-400 transition">خانه</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-green-400 transition">درباره ما</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-green-400 transition"></a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-green-400 transition">گالری</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-green-400 transition">تماس</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © ۱۴۰۴ سالن بیلیارد استار. تمام حقوق محفوظ است.
+                </p>
+                
+                <a href="tel:+989932207043" class="text-red-500">طراحی شده توسط Afshin Ataei</a>
+               
+            </div>
+        </div>
+    </footer>
+
+    <!-- دکمه بازگشت به بالا -->
+    <a href="#home" class="fixed bottom-8 left-8 bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-green-700 transition">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </a>
+
+    <!-- اسکریپت منوی موبایل -->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
